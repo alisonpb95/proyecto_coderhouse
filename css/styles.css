@@ -1,0 +1,248 @@
+/*Importamos fuente de texto a css*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:ital@1&display=swap');
+
+/*Configuración general de la página*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*Configuración general del cuerpo de la página*/
+body {    
+    background-image: url(../img/portada.jpg); /*Imagen de portada*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90px;
+    width: 100%;
+}
+
+/*Configuración general de Encabezado*/
+header {
+    
+    background-color: #a19e9e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+    position: sticky;
+    top: 0;
+}
+
+/*Configuración de logo en el encabezado*/
+header img{
+    width: 80px;
+}
+
+/*Configuración de imagenes de contacto en el pie página */
+footer img {
+    width: 30px;
+}
+
+/*Configuración de nombre empresa*/
+.titulo-pag {
+    color: rgb(51, 55, 58);
+    font-weight: bold;
+    font-size: 27px;
+       
+}
+
+/*Quitamos el punteo de los titulos de los menus y Se coloca en direccion horizontal*/
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/*Quitamos el subrayado de los titulos de los menus*/
+a {
+    text-decoration: none;
+}
+
+/*Tamaño de logo*/
+img {
+    max-width: 100%;
+}
+ 
+/*Configuración color y negrita de menu*/
+.menu {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+/*Mantiene portada y otras secciones por separado y no encima*/
+.banner {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+    text-align: center;
+    margin: 30px 0;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    
+        
+}
+
+/*Separación entre portada y 1° sección*/
+section { 
+    margin: 0px 0;
+}
+
+
+h2{    
+    text-align: center;
+    margin:20px 0;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+
+}
+
+/* Configuración menu principal en los filtros*/
+.card-portada-i {
+    width: 130%;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 30px 40px;
+    display: flex;
+    gap: 10px;
+    color: aliceblue;
+    justify-content: space-around;
+    opacity: .89;
+    
+
+}
+
+.card-portada-i-filtro label{
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+
+.card-portada-i input{
+    width: 200px;
+    height: 30px;
+}
+
+.boton-buscar {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: 18px;
+    
+
+}
+
+
+.contenedor-padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.contenedor {
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    color: #434343;
+    box-shadow: 3px 2.5px 10px black;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+    
+}
+
+.contenedor img {
+    background-size: cover;
+    height: 290px;
+    width: 100%;
+}
+
+.contenedor-padre button {
+    background-color: blueviolet;
+    border: none;
+    width: 80%;
+    height: 55px;
+    color: aliceblue;
+    font-weight: bold;
+    
+    
+}
+
+.contenedor .contenedor-texto {
+    margin: 10px 20px;
+}
+
+.contenedor-opciones {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor-op2 img {
+    background-size: cover;
+    height: 290px;
+    width: 100%;
+    box-shadow: 3px 2.5px 10px black;
+}
+
+.contenedor-op2 {
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    color: #434343;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+footer {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    gap: 10px;
+}
+
+.contacto {
+    color: #000000;
+    display: flex;
+    gap: 20px;
+}
+
+
+.padre-redes img{
+    width: 25px;
+      
+}

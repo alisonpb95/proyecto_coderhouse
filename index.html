@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Inicio</title>    
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <!--Logo-->
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo TravelinAp">
+        </a>
+        <!--Nombre de Empresa-->
+        <div class="titulo-pag">TravelinAp</div>
+        <!--Menu de navegación-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="menu">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="pages/paquetes.html" class="menu">Paquetes</a>
+                </li>
+
+                <li>
+                    <a href="pages/actividades.html" class="menu">Actividades</a>
+                </li>
+
+                <li>
+                    <a href="pages/hoteles.html" class="menu">Hoteles</a>
+                </li>
+
+                <li>
+                    <a href="pages/quienessomos.html" class="menu">Quienes somos</a>
+                </li>
+            </ul>
+        </nav>
+        
+        
+        
+    </header>
+
+    <div class="banner"></div>
+    
+    <!--Texto principal-->
+    <main>
+        <h1>¿Cuál es tu próxima aventura?</h1>
+        <!--Filtro de busqueda de lugar a visitar y fecha-->
+        <form>
+            <div class="card-portada-i">
+                <div class="card-portada-i-filtro">
+                    <label for="destino">Destino</label>
+                    <input type="search" id="destino" placeholder="País o ciudad">
+                </div>
+                
+                <div class="card-portada-i-filtro">
+                    <label for="fecha-inicio">Fecha de Inicio</label>
+                    <input type="date" id="fecha-inicio">
+                </div>
+
+                <button class="boton-buscar">Buscar</button>
+            </div>           
+
+        </form>
+
+    </main>
+
+    <!--Sección N°1: Hoteles más populares-->
+    <section>
+        
+        <h2>Hoteles Destacados</h2>
+
+        <div class="contenedor-padre">
+            <div class="contenedor">
+                <img src="img/hotel-ibis-santiago.jpg" alt="Hotel Ibis Santiago">
+                <div class="contenedor-texto">
+                    <h4>Hotel Ibis Santiago</h4>
+                    <p>1 Noche</p>
+                    <p>$64.360*</p>
+                    <p>Ver Condiciones</p>
+                </div>
+            </div>
+    
+            <div class="contenedor">
+                <img src="img/hotel-desertica.jpg" alt="Hotel Desértica">
+                <div class="contenedor-texto">
+                    <h4>Desértica</h4>
+                    <p>2 Noche</p>
+                    <p>$256.990*</p>
+                    <p>Ver Condiciones</p>
+                </div>
+            </div>
+    
+            <div class="contenedor">
+                <img src="img/hotel-enjoy.jpg" alt="Hotel Enjoy Coquimbo">
+                <div class="contenedor-texto">
+                    <h4>Enjoy Coquimbo</h4>
+                    <p>1 Noche</p>
+                    <p>$158.650*</p>
+                    <p>Ver Condiciones</p>
+                </div>
+            </div>  
+
+            <div>
+                <form>
+                    <button>Ver más hoteles</button>
+                </form>
+            </div>
+            
+
+        </div>
+        </section>
+
+        <!--Sección N°2: Opciones recomendadas por la empresa hacia el cliente-->
+        <section>
+            <h2>Nuestros Recomendados</h2>
+            <div class="contenedor-opciones">
+                <div class="contenedor-op2">
+                    <img src="img/paquete-turistico.jpg" alt="Paquetes">
+                    <h3>Paquetes Turísticos</h3>
+                </div>
+        
+                <div class="contenedor-op2">
+                    <img src="img/experiencias.png" alt="Experiencias">
+                    <h3>Experiencias únicas</h3>
+                </div>
+        
+                <div class="contenedor-op2">
+                    <img src="img/viaje-seguro.jpg" alt="Viaje Seguro">
+                    <h3>Viaje Seguro</h3>
+                </div>
+        
+                <div class="contenedor-op2">
+                    <img src="img/guia-turistico.jpg" alt="Guías">
+                    <h3>Guías Turísticas</h3>
+                </div>
+            </div>
+    </section>
+
+    <!--Pie de página: redes sociales y contactos-->
+    <footer>
+        <h3>Visita nuestras redes sociales</h3>
+
+        <!--Redes Sociales-->
+        <div class="padre-redes">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="img/linkedin.svg" alt="Icono linkedin" class="icono-redes">
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="img/instagram.svg" alt="Icono instagram" class="icono-redes">
+            </a>
+
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="img/facebook-box-fill.svg" alt="Icono facebook" class="icono-redes">
+            </a>
+        </div>
+
+        <!--Contactos-->
+        <div class="contacto">
+            <img src="img/bandera.png" alt="" class="contacto-info">
+            <div>(+56) 923678934</div>
+
+            <img src="img/correo.png" alt="" class="contacto-info">
+            <div>Contáctanos</div>
+            
+        </div>
+
+        <p>Sitio web creado en la comision 39365 de Coderhouse&copy;</p>
+    </footer>
+
+</body>
+</html>
