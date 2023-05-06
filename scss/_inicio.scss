@@ -17,6 +17,13 @@ h3 {
     }
 }
 
+main {
+    @include menu;
+    width: 70%;
+    top: 15%;
+    left: 15%
+}
+
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {

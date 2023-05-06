@@ -13,6 +13,13 @@ h1, h2, h3, h4 {
     }
 }
 
+main {
+    @include menu;
+    width: 70%;
+    top: 15%;
+    left: 15%
+}
+
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-a {

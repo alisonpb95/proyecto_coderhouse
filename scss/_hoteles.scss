@@ -1,0 +1,107 @@
+h1, h2, h3, h4 {
+    @include titulos;
+}
+
+.banner-hoteles {
+    background-image: url(../img/portada-hoteles.jpg); /*Imagen de portada*/
+    @include banner-conf;
+}
+
+@media (max-width:$tablet) {
+    .banner-hoteles{
+        @include banner-medida;
+    }
+}
+
+main {
+    @include menu;
+    width: 90%;
+    top: 15%;
+    left: 5%;
+}
+
+/*Menu de busqueda prinicipal*/
+/*fondo menu busqueda*/
+
+.card-portada-h {
+    width: 95%;
+    padding: 30px 25px;
+    @include card-portada;
+}
+
+@media (max-width:$tablet) {
+    .card-portada-h {
+        @include card-portada-chico;
+    }
+}
+
+/*Label menu busqueda*/
+.card-portada-h-filtro label {
+    @include card-portada-label;
+}
+
+@media (max-width:$tablet) {
+    .card-portada-h-filtro label{
+        @include card-portada-label-chico;
+        
+    }
+}
+
+/*Input de menu busqueda*/
+.card-portada-h input {
+    @include card-portada-input;
+}
+
+/*Configuracion contenedor*/
+
+.contenedor-padre {
+    @include contenedor-padres;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedor {
+    @include contenedor-detalle;
+}
+
+.contenedor img {
+    @include contenedor-imagen;
+}
+
+.contenedor h3{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.contenedor p {
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    
+}
+
+
+.boton-mas-ofertas button{
+    background-color: blueviolet;
+    border: none;
+    width: 20%;
+    height: 45px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1$letra-chica;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.suscribete-hoteles {
+    @include suscribete;
+}
+
+@media (max-width:$tablet) {
+    .suscribete-hoteles {
+        @include suscribete-chico;
+    }
+}
+
+
