@@ -230,10 +230,10 @@ main {
 }
 /*Configuracion contenedor*/
 .contenedor-padre {
-  justify-content: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   margin: 10px 20px;
 }
@@ -928,6 +928,102 @@ main {
     justify-content: space-around;
     align-items: center;
   }
+}
+h1, h2, h3, h4 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.banner-somos {
+  background-image: url(../img/portada-quienessomos.jpeg); /*Imagen de portada*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.7);
+  height: 450px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner-somos {
+    height: 450px;
+    width: 100%;
+  }
+}
+main {
+  margin: 70px 0;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+/*Configuracion mapa*/
+iframe {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    width: 100%;
+  }
+}
+/*Configuracion formulario contactanos*/
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 16px;
+  margin: auto;
+}
+
+.contenedor-padre {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 90px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenedor-somos {
+  color: rgb(51, 55, 58);
+  display: inline-block;
+  width: 140%;
+}
+
+/*CONFIGURACION LABEL DE FORMULARIO*/
+.contenedor-somos label {
+  width: 80px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/*CONFIGURACION INPUT DE FORMULARIO*/
+.contenedor-somos input {
+  width: 300px;
+  height: 28px;
+  margin-bottom: 15px;
+}
+
+.contenedor-somos textarea {
+  width: 300px;
+  height: 200px;
+}
+
+/*CONFIGURACION BOTÓN DE FORMULARIO*/
+.boton-enviar {
+  background-color: blueviolet;
+  border: none;
+  width: 55%;
+  height: 35px;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 5%;
+  border-radius: 5%;
 }
 
 /*# sourceMappingURL=styles.css.map */

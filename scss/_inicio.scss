@@ -71,8 +71,8 @@ main {
 /*Configuracion contenedor*/
 
 .contenedor-padre {
-    justify-content: center;
     @include contenedor-padres;
+    justify-content: center;
     gap: 40px;
     margin: 10px 20px;
 }
