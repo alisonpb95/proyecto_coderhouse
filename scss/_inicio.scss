@@ -36,7 +36,7 @@ h3 {
     @include card-portada-label;
 }
 
-@media (max-width:800px) {
+@media (max-width:$tablet) {
     .card-portada-i-filtro label{
         @include card-portada-label-chico;
         

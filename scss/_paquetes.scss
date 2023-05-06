@@ -1,3 +1,91 @@
-header img {
-    width: 90px;
+h1, h2, h3, h4 {
+    @include titulos;
 }
+
+.banner-paquetes {
+    background-image: url(../img/portada-paquete.jpg); /*Imagen de portada*/
+    @include banner-conf;
+}
+
+@media (max-width:$tablet) {
+    .banner-paquetes{
+        @include banner-medida;
+    }
+}
+
+/*Menu de busqueda prinicipal*/
+/*fondo menu busqueda*/
+
+.card-portada-p {
+    width: 85%;
+    padding: 30px 40px;
+    @include card-portada;
+}
+
+@media (max-width:$tablet) {
+    .card-portada-p {
+        @include card-portada-chico;
+    }
+}
+
+/*Label menu busqueda*/
+.card-portada-p-filtro label {
+    @include card-portada-label;
+}
+
+@media (max-width:$tablet) {
+    .card-portada-p-filtro label{
+        @include card-portada-label-chico;
+        
+    }
+}
+
+/*Input de menu busqueda*/
+.card-portada-p input {
+    @include card-portada-input;
+}
+
+/*Configuracion contenedor*/
+
+.contenedor-padre {
+    justify-content: center;
+    @include contenedor-padres;
+    gap: 30px;
+    margin: 10px 20px;
+}
+
+.contenedor {
+    @include contenedor-detalle;
+}
+
+.contenedor-opciones {
+    @include contenedor-padre-opciones;
+    gap: 20px;
+}
+
+.opciones {
+    background-color: rgb(255, 255, 255);
+    @include contenedor-opciones-detalle;
+}
+
+.opciones img {
+    @include contenedor-opciones-imagen;
+}
+
+.opciones h3 {
+    position: absolute;
+    margin-left: 15px;
+    color: $color-primario;
+    font-weight: bold;
+}
+
+.suscribete-paquetes {
+    @include suscribete;
+}
+
+@media (max-width:$tablet) {
+    .suscribete-paquetes {
+        @include suscribete-chico;
+    }
+}
+

@@ -1,0 +1,8 @@
+h1, h2, h3, h4 {
+    @include titulos;
+}
+
+.banner-actividades {
+    background-image: url(../img/portada-actividades.jpg); /*Imagen de portada*/
+    @include banner-conf;
+}
