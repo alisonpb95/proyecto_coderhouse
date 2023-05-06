@@ -78,31 +78,7 @@ section {
     margin: 30px 0;
 }
 
-.boton-buscar {
-    background-color: $color-terciario;
-    border: none;
-    border-radius: 3px;
-    width: 90px;
-    height: 40px;
-    color: $color-secundario;
-    font-weight: bold;
-    margin-top: 18px;
 
-}
-
-@media (max-width:$tablet){
-    .boton-buscar {
-        background-color: $color-terciario;
-        border: none;
-        border-radius: 3px;
-        width: 90px;
-        height: 40px;
-        color: $color-secundario;
-        font-weight: bold;
-        margin-top: 18px;
-        margin-left: 35%;
-    }
-}
 
 /*Configuracion contenedor de hoteles destacados*/
 

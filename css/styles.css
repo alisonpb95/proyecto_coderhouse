@@ -84,30 +84,6 @@ section {
   margin: 30px 0;
 }
 
-.boton-buscar {
-  background-color: rgb(138, 43, 226);
-  border: none;
-  border-radius: 3px;
-  width: 90px;
-  height: 40px;
-  color: rgb(240, 248, 255);
-  font-weight: bold;
-  margin-top: 18px;
-}
-
-@media (max-width: 768px) {
-  .boton-buscar {
-    background-color: rgb(138, 43, 226);
-    border: none;
-    border-radius: 3px;
-    width: 90px;
-    height: 40px;
-    color: rgb(240, 248, 255);
-    font-weight: bold;
-    margin-top: 18px;
-    margin-left: 35%;
-  }
-}
 /*Configuracion contenedor de hoteles destacados*/
 .contenedor img {
   background-size: cover;
@@ -209,6 +185,7 @@ h3 {
 .card-portada-i-filtro label {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 
@@ -227,6 +204,30 @@ h3 {
   height: 30px;
 }
 
+.boton-buscar {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  color: rgb(240, 248, 255);
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .boton-buscar {
+    background-color: rgb(138, 43, 226);
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: rgb(240, 248, 255);
+    font-weight: bold;
+    margin-top: 18px;
+    margin-left: 35%;
+  }
+}
 /*Configuracion contenedor*/
 .contenedor-padre {
   justify-content: center;
@@ -240,7 +241,7 @@ h3 {
 .contenedor {
   width: 300px;
   background-color: rgb(240, 248, 255);
-  color: #434343;
+  color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -402,6 +403,7 @@ h1, h2, h3, h4 {
 .card-portada-p-filtro label {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: bold;
 }
 
@@ -420,12 +422,36 @@ h1, h2, h3, h4 {
   height: 30px;
 }
 
+.boton-buscar {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  color: rgb(240, 248, 255);
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .boton-buscar {
+    background-color: rgb(138, 43, 226);
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: rgb(240, 248, 255);
+    font-weight: bold;
+    margin-top: 18px;
+    margin-left: 35%;
+  }
+}
 /*Configuracion contenedor*/
 .contenedor-padre {
-  justify-content: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin: 10px 20px;
 }
@@ -433,7 +459,7 @@ h1, h2, h3, h4 {
 .contenedor {
   width: 300px;
   background-color: rgb(240, 248, 255);
-  color: #434343;
+  color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -449,7 +475,7 @@ h1, h2, h3, h4 {
 }
 
 .opciones {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 248, 255);
   width: 280px;
   color: rgb(51, 55, 58);
   display: flex;
@@ -509,6 +535,212 @@ h1, h2, h3, h4 {
   filter: brightness(0.7);
   height: 450px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .banner-actividades {
+    height: 450px;
+    width: 100%;
+  }
+}
+/*Menu de busqueda prinicipal*/
+/*fondo menu busqueda*/
+.card-portada-a {
+  width: 85%;
+  padding: 30px 40px;
+  background-color: rgb(35, 35, 35);
+  margin: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgb(240, 248, 255);
+  justify-content: space-between;
+  opacity: 0.89;
+}
+
+@media (max-width: 867px) {
+  .card-portada-a {
+    width: 130%;
+    background-color: rgb(35, 35, 35);
+    margin: auto 0;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: rgb(240, 248, 255);
+    justify-content: center;
+    opacity: 0.89;
+  }
+}
+/*Label menu busqueda*/
+.card-portada-a-filtro label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (max-width: 867px) {
+  .card-portada-a-filtro label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+}
+/*Input de menu busqueda*/
+.card-portada-a input {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  margin: auto auto;
+}
+
+.boton-buscar {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  color: rgb(240, 248, 255);
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+@media (max-width: 867px) {
+  .boton-buscar {
+    background-color: rgb(138, 43, 226);
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: rgb(240, 248, 255);
+    font-weight: bold;
+    margin-top: 18px;
+    margin-left: 35%;
+  }
+}
+/*Configuracion contenedor*/
+.contenedor-padre {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contenedor-actividades {
+  width: 280px;
+  color: rgb(51, 55, 58);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contenedor-actividades h3 {
+  color: rgb(240, 248, 255);
+  font-weight: bold;
+  position: absolute;
+  margin-top: 225px;
+  margin-left: 20px;
+}
+
+.contenedor-actividades p {
+  color: rgb(240, 248, 255);
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 20px;
+}
+
+.contenedor-actividades img {
+  background-size: cover;
+  height: 290px;
+  width: 100%;
+  box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
+}
+
+/*Configuracion seccion actividades sudamerica*/
+.contenedor-padre-opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contenedor-opa {
+  width: 280px;
+  color: rgb(51, 55, 58);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contenedor-opa img {
+  background-size: cover;
+  height: 290px;
+  width: 100%;
+  box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
+}
+
+.contenedor-opa h3 {
+  color: rgb(240, 248, 255);
+  font-weight: bold;
+  position: absolute;
+  margin-top: 225px;
+  margin-left: 20px;
+}
+
+.contenedor-opa p {
+  color: rgb(240, 248, 255);
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 20px;
+}
+
+.boton-actividades-otros-destinos button {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  width: 250px;
+  height: 45px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 38%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.suscribete-actividades {
+  width: 75%;
+  margin: 0 50px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: rgb(51, 55, 58);
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .suscribete-actividades {
+    width: 75%;
+    margin: 0 60px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(51, 55, 58);
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

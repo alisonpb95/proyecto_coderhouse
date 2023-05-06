@@ -48,6 +48,19 @@ h3 {
     @include card-portada-input;
 }
 
+
+.boton-buscar {
+    @include boton-buscar-principal;
+}
+
+@media (max-width:$tablet) {
+    .boton-buscar{
+        @include boton-buscar-principal-chico;
+        
+    }
+}
+
+
 /*Configuracion contenedor*/
 
 .contenedor-padre {

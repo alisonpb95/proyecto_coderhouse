@@ -6,3 +6,147 @@ h1, h2, h3, h4 {
     background-image: url(../img/portada-actividades.jpg); /*Imagen de portada*/
     @include banner-conf;
 }
+
+@media (max-width:$tablet) {
+    .banner-actividades{
+        @include banner-medida;
+    }
+}
+
+/*Menu de busqueda prinicipal*/
+/*fondo menu busqueda*/
+.card-portada-a {
+    width: 85%;
+    padding: 30px 40px;
+    @include card-portada;
+}
+
+@media (max-width:867px) {
+    .card-portada-a {
+        @include card-portada-chico;
+    }
+}
+
+/*Label menu busqueda*/
+.card-portada-a-filtro label {
+    @include card-portada-label;
+}
+
+@media (max-width:867px) {
+    .card-portada-a-filtro label{
+        @include card-portada-label-chico;
+        
+    }
+}
+
+/*Input de menu busqueda*/
+.card-portada-a input {
+    @include card-portada-input;
+    display: flex;
+    margin: auto auto;
+}
+
+.boton-buscar {
+    @include boton-buscar-principal;
+}
+
+@media (max-width:867px) {
+    .boton-buscar{
+        @include boton-buscar-principal-chico;
+    }
+}
+
+/*Configuracion contenedor*/
+
+.contenedor-padre {
+    @include contenedor-padres;
+    justify-content:  center;
+    gap: 40px;
+}
+
+.contenedor-actividades {
+    width: 280px;
+    color: $color-primario;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-actividades h3 {
+    color: $color-secundario;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 20px;
+    
+}
+
+.contenedor-actividades p {
+    color: $color-secundario;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 20px;
+}
+
+.contenedor-actividades img {
+    @include contenedor-opciones-imagen;
+}
+
+/*Configuracion seccion actividades sudamerica*/
+
+.contenedor-padre-opciones {
+    @include contenedor-padre-opciones;
+    gap: 40px;
+}
+
+.contenedor-opa {
+    @include contenedor-opciones-detalle;
+}
+
+.contenedor-opa img {
+    @include contenedor-opciones-imagen;
+}
+
+.contenedor-opa h3 {
+    color: $color-secundario;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 20px;
+    
+}
+
+.contenedor-opa p {
+    color: $color-secundario;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 20px;
+}
+
+.boton-actividades-otros-destinos button{
+    background-color: $color-terciario;
+    border: none;
+    width: 250px;
+    height: 45px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 38%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.suscribete-actividades {
+    @include suscribete;
+}
+
+@media (max-width:$tablet) {
+    .suscribete-actividades {
+        @include suscribete-chico;
+    }
+}
+

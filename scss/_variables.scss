@@ -82,6 +82,7 @@ $desktopXG: 1200px;
 @mixin card-portada-label {
     display:flex;
     justify-content: center;
+    align-items: center;
     font-weight: bold;
 }
 
@@ -104,10 +105,33 @@ $desktopXG: 1200px;
     flex-wrap: wrap;
 }
 
+@mixin boton-buscar-principal {
+    background-color: $color-terciario;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: $color-secundario;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+@mixin boton-buscar-principal-chico {
+    background-color: $color-terciario;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: $color-secundario;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-left: 35%;
+}
+
 @mixin contenedor-detalle {
     width: 300px;
     background-color: $color-secundario;
-    color: #434343;
+    color: $color-primario;
     box-shadow: 3px 2.5px 10px $color-quinto;
     display: flex;
     flex-direction: column;
