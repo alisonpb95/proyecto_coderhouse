@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fuente-principal;
+}
+
+/*Encabezado*/
+header {
+    
+    background-color: $color-cuarto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+
+.navbar-brand {
+    color: $color-primario;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+header img {
+    width: 90px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.nav-item a {
+    color: $color-secundario;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: $letra-gigante;
+}
+
+h2 {
+    font-size: $letra-grande;
+}
+
+h3 {
+    font-size: $letra-mediana
+}
+
+h4 {
+    font-size: $letra-chica
+}
+
+/*Configuración portada*/
+
+  .banner {
+    background-image: url(../img/portada.jpg); /*Imagen de portada*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+    height: 450px;
+    width: 100%;
+}
+
+@media (max-width: $tablet) {
+    .banner{
+        height: 450px;
+        width: 100%;
+    }
+
+  }
+
+main {
+    @include menu;
+}
+
+form{
+    display: flex;
+}
+
+section { 
+    margin: 30px 0;
+}
+
+.boton-buscar {
+    background-color: $color-terciario;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 40px;
+    color: $color-secundario;
+    font-weight: bold;
+    margin-top: 18px;
+
+}
+
+@media (max-width:$tablet){
+    .boton-buscar {
+        background-color: $color-terciario;
+        border: none;
+        border-radius: 3px;
+        width: 90px;
+        height: 40px;
+        color: $color-secundario;
+        font-weight: bold;
+        margin-top: 18px;
+        margin-left: 35%;
+    }
+}
+
+/*Configuracion contenedor de hoteles destacados*/
+
+.contenedor img {
+    background-size: cover;
+    height: 290px;
+    width: 100%;
+}
+
+.contenedor .contenedor-texto {
+    margin: 10px 20px;
+}
+
+/*Configuración de imagenes de contacto en el pie página */
+
+footer img {
+    width: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.contacto {
+    color: $color-quinto;
+    display: flex;
+    gap: 20px;
+}
+
+.padre-redes img{
+    width: 25px;
+}

@@ -1,0 +1,176 @@
+h1, h2, h3, h4 {
+    @include titulos;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url(../img/portada.jpg); /*Imagen de portada*/
+    @include banner-conf;
+}
+
+@media (max-width:$tablet) {
+    .banner{
+        @include banner-medida;
+    }
+}
+
+/*Menu de busqueda prinicipal*/
+/*fondo menu busqueda*/
+.card-portada-i {
+    width: 130%;
+    padding: 30px 40px;
+    @include card-portada;
+}
+
+@media (max-width:$tablet) {
+    .card-portada-i {
+        @include card-portada-chico;
+    }
+}
+
+/*Label menu busqueda*/
+.card-portada-i-filtro label {
+    @include card-portada-label;
+}
+
+@media (max-width:800px) {
+    .card-portada-i-filtro label{
+        @include card-portada-label-chico;
+        
+    }
+}
+
+/*Input de menu busqueda*/
+.card-portada-i input {
+    @include card-portada-input;
+}
+
+/*Configuracion contenedor*/
+
+.contenedor-padre {
+    justify-content: center;
+    @include contenedor-padres;
+    gap: 40px;
+    margin: 10px 20px;
+}
+
+.contenedor {
+    @include contenedor-detalle;
+}
+
+.contenedor img {
+    @include contenedor-imagen;
+}
+
+.boton-mas-hoteles button{
+    background-color: $color-terciario;
+    border: none;
+    width: 20%;
+    height: 45px;
+    color: $color-secundario;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+/* Configuración de recomendaciones*/
+
+#grid-recomendaciones {
+    display: grid;
+    grid-template-areas: 
+    "recomendacion-paquetes recomendacion-paquetes recomendacion-experiencia"
+    "recomendacion-seguro recomendacion-guia recomendacion-guia";
+    grid-template-rows: 380px 380px 380px;
+    grid-template-columns: 30% auto 30%; 
+    margin: 3%;
+    gap: 10px;
+    
+}
+
+
+@media (max-width: $tablet) {
+    #grid-recomendaciones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+        
+    }
+
+    .border img {
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        box-shadow: 3px 2.5px 10px $color-sexto;
+    }
+    
+    .border {
+        width: 280px;
+        background-color: $color-secundario;
+        color: $color-primario;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+}
+
+#recomendacion-paquetes img, #recomendacion-experiencia img, #recomendacion-seguro img, #recomendacion-guia img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media (max-width:$tablet){
+    #recomendacion-paquetes img  {
+        width: 900px;
+        height: 230px;
+    }
+}
+
+#recomendacion-paquetes h3, #recomendacion-seguro h3,#recomendacion-experiencia h3, #recomendacion-guia h3  {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: $color-sexto;
+}
+
+@media (max-width:$tablet) {
+    #recomendacion-paquetes h3 , #recomendacion-seguro h3, #recomendacion-experiencia h3, #recomendacion-guia h3 {
+        font-size: 23px;
+    }
+    
+}
+
+section#recomendacion-paquetes {
+    grid-area: recomendacion-paquetes;
+}
+
+section#recomendacion-experiencia {
+    grid-area: recomendacion-experiencia;
+}
+
+section#recomendacion-seguro {
+    grid-area: recomendacion-seguro;
+}
+
+section#recomendacion-guia {
+    grid-area: recomendacion-guia;
+}
+
+#recomendacion-paquetes{
+    grid-column: 1/3;
+}
+
+#recomendacion-guia{
+    grid-column: 2/4;
+}

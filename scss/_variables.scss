@@ -1,0 +1,124 @@
+/*Fuente*/
+$fuente-principal: 'Noto Sans', sans-serif;
+
+/*Colores*/
+$color-primario: rgb(51, 55, 58);
+$color-secundario: aliceblue;
+$color-terciario: blueviolet;
+$color-cuarto: rgb(161, 158, 158);
+$color-quinto: #000000;
+$color-sexto: rgb(45, 45, 46);
+$color-septimo: rgb(35, 35, 35);
+
+
+/*Tamaño de letra*/
+$letra-chica: 16px;
+$letra-mediana: 25px;
+$letra-grande: 27px;
+$letra-gigante: 31px;
+
+/*Resoluciones de pantallas*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*Imagenes Portadas*/
+$portada-inicio: url(../img/portada.jpg);
+
+@mixin titulos {
+    text-align: center;
+    margin:20px 0;
+}
+
+@mixin menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: aliceblue;
+    text-align: center;
+    margin: 30px 0;
+    position: absolute;
+    width: 70%;
+    top: 15%;
+    left: 15%;
+}
+
+@mixin banner-conf {
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+    height: 450px;
+    width: 100%;
+}
+
+@mixin banner-medida {
+    height: 450px;
+    width: 100%;
+}
+
+@mixin card-portada {
+    background-color: $color-septimo;
+    margin: auto auto;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+    color: $color-secundario;
+    justify-content: space-between;
+    opacity: .89;
+}
+
+
+@mixin card-portada-chico {
+    width: 130%;
+        background-color: $color-septimo;
+        margin: auto 0;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: aliceblue;
+        justify-content: center;
+        opacity: .89;
+}
+
+@mixin card-portada-label {
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@mixin card-portada-label-chico {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@mixin card-portada-input {
+    width: 200px;
+    height: 30px;
+}
+
+@mixin contenedor-padres {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin contenedor-detalle {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: #434343;
+    box-shadow: 3px 2.5px 10px black;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+@mixin contenedor-imagen {
+    background-size: cover;
+    height: 290px;
+    width: 100%;
+}
