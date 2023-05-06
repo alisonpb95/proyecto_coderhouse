@@ -27,8 +27,8 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-    width: 130%;
-    padding: 30px 40px;
+    width: 300%;
+    padding: 30px 70px;
     @include card-portada;
 }
 
@@ -79,13 +79,12 @@ main {
 }
 
 
-/*Configuracion contenedor*/
+/*Configuracion contenedor hoteles destacados*/
 
 .contenedor-padre {
     @include contenedor-padres;
     justify-content: center;
     gap: 40px;
-    margin: 10px 20px;
 }
 
 .contenedor {

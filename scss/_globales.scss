@@ -71,14 +71,6 @@ h4 {
 /*Configuración portada*/
 
 
-@media (max-width: $tablet) {
-    .banner{
-        height: 450px;
-        width: 100%;
-    }
-
-  }
-
 
 form{
     display: flex;
@@ -104,10 +96,10 @@ section {
 
 .boton-suscribete {
     background-color: $color-terciario;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
     width: 300px;
-    padding: 1.5%;
+    padding: 4.3%;
     color: $color-secundario;
     font-weight: bold;
 

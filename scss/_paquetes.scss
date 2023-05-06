@@ -24,7 +24,7 @@ main {
 /*fondo menu busqueda*/
 
 .card-portada-p {
-    width: 85%;
+    width: 300%;
     padding: 30px 40px;
     @include card-portada;
 }
@@ -88,7 +88,7 @@ main {
 
 .contenedor-opciones {
     @include contenedor-padre-opciones;
-    gap: 20px;
+    gap: 50px;
 }
 
 .opciones {
@@ -114,6 +114,24 @@ main {
 @media (max-width:$tablet) {
     .suscribete-paquetes {
         @include suscribete-chico;
+    }
+}
+
+#suscribete-paquetes {
+    width: 630px;
+    height: 9px;
+    margin: 0 60px;
+    padding: 20px 0;
+}
+
+
+
+@media (max-width:800px) {
+    #suscribete-paquetes {
+        width: 330px;
+        height: 3px;
+        margin: 0 60px;
+        padding: 20px 0;
     }
 }
 

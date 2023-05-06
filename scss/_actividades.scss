@@ -23,7 +23,7 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-a {
-    width: 85%;
+    width: 200%;
     padding: 30px 40px;
     @include card-portada;
 }
@@ -73,12 +73,20 @@ main {
     }
 }
 
-/*Configuracion contenedor*/
+/*Configuracion contenedor destinos mas elegidos chile*/
 
 .contenedor-padre {
     @include contenedor-padres;
-    justify-content:  center;
-    gap: 40px;
+    gap: 30px;
+}
+
+@media (min-width: $tablet) {
+    .contenedor-padre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 .contenedor-actividades {
@@ -86,7 +94,7 @@ main {
     color: $color-primario;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
 }
 
 .contenedor-actividades h3 {
@@ -101,8 +109,8 @@ main {
 .contenedor-actividades p {
     color: $color-secundario;
     position: absolute;
-    margin-top: 250px;
-    margin-left: 20px;
+    margin-top: 255px;
+    margin-left: 0px;
 }
 
 .contenedor-actividades img {
@@ -113,7 +121,7 @@ main {
 
 .contenedor-padre-opciones {
     @include contenedor-padre-opciones;
-    gap: 40px;
+    gap: 50px;
 }
 
 .contenedor-opa {
@@ -172,3 +180,20 @@ main {
     }
 }
 
+#suscribete-actividades {
+    width: 630px;
+    height: 9px;
+    margin: 0 60px;
+    padding: 20px 0;
+}
+
+
+
+@media (max-width:800px) {
+    #suscribete-actividades {
+        width: 330px;
+        height: 3px;
+        margin: 0 60px;
+        padding: 20px 0;
+    }
+}

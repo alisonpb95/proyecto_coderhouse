@@ -70,12 +70,6 @@ h4 {
 }
 
 /*Configuración portada*/
-@media (max-width: 768px) {
-  .banner {
-    height: 450px;
-    width: 100%;
-  }
-}
 form {
   display: flex;
 }
@@ -97,10 +91,10 @@ section {
 
 .boton-suscribete {
   background-color: rgb(138, 43, 226);
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   width: 300px;
-  padding: 1.5%;
+  padding: 4.3%;
   color: rgb(240, 248, 255);
   font-weight: bold;
 }
@@ -171,15 +165,16 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-  width: 130%;
-  padding: 30px 40px;
+  width: 300%;
+  padding: 30px 70px;
   background-color: rgb(35, 35, 35);
   margin: auto 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   opacity: 0.89;
 }
 
@@ -254,18 +249,18 @@ main {
     color: rgb(240, 248, 255);
   }
 }
-/*Configuracion contenedor*/
+/*Configuracion contenedor hoteles destacados*/
 .contenedor-padre {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin: 10px 20px;
 }
 
 .contenedor {
-  width: 300px;
+  width: 350px;
   background-color: rgb(240, 248, 255);
   color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
@@ -415,15 +410,16 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-p {
-  width: 85%;
+  width: 300%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
   margin: auto 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   opacity: 0.89;
 }
 
@@ -500,6 +496,7 @@ main {
 /*Configuracion contenedor*/
 .contenedor-padre {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -508,7 +505,7 @@ main {
 }
 
 .contenedor {
-  width: 300px;
+  width: 350px;
   background-color: rgb(240, 248, 255);
   color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
@@ -522,7 +519,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 200px;
+  gap: 50px;
 }
 
 .opciones {
@@ -549,7 +547,7 @@ main {
 }
 
 .suscribete-paquetes {
-  width: 75%;
+  width: 80%;
   margin: 0 50px;
   padding: 30px 0;
   display: flex;
@@ -572,6 +570,21 @@ main {
     color: rgb(51, 55, 58);
     justify-content: space-around;
     align-items: center;
+  }
+}
+#suscribete-paquetes {
+  width: 630px;
+  height: 9px;
+  margin: 0 60px;
+  padding: 20px 0;
+}
+
+@media (max-width: 800px) {
+  #suscribete-paquetes {
+    width: 330px;
+    height: 3px;
+    margin: 0 60px;
+    padding: 20px 0;
   }
 }
 h1, h2, h3, h4 {
@@ -610,15 +623,16 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-a {
-  width: 85%;
+  width: 200%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
   margin: auto 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   opacity: 0.89;
 }
 
@@ -694,21 +708,29 @@ main {
     color: rgb(240, 248, 255);
   }
 }
-/*Configuracion contenedor*/
+/*Configuracion contenedor destinos mas elegidos chile*/
 .contenedor-padre {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
+@media (min-width: 768px) {
+  .contenedor-padre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
 .contenedor-actividades {
   width: 280px;
   color: rgb(51, 55, 58);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
 }
 
 .contenedor-actividades h3 {
@@ -722,8 +744,8 @@ main {
 .contenedor-actividades p {
   color: rgb(240, 248, 255);
   position: absolute;
-  margin-top: 250px;
-  margin-left: 20px;
+  margin-top: 255px;
+  margin-left: 0px;
 }
 
 .contenedor-actividades img {
@@ -739,7 +761,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 200px;
+  gap: 50px;
 }
 
 .contenedor-opa {
@@ -793,7 +816,7 @@ main {
 }
 
 .suscribete-actividades {
-  width: 75%;
+  width: 80%;
   margin: 0 50px;
   padding: 30px 0;
   display: flex;
@@ -816,6 +839,21 @@ main {
     color: rgb(51, 55, 58);
     justify-content: space-around;
     align-items: center;
+  }
+}
+#suscribete-actividades {
+  width: 630px;
+  height: 9px;
+  margin: 0 60px;
+  padding: 20px 0;
+}
+
+@media (max-width: 800px) {
+  #suscribete-actividades {
+    width: 330px;
+    height: 3px;
+    margin: 0 60px;
+    padding: 20px 0;
   }
 }
 h1, h2, h3, h4 {
@@ -854,15 +892,16 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-h {
-  width: 95%;
+  width: 400%;
   padding: 30px 25px;
   background-color: rgb(35, 35, 35);
   margin: auto 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   opacity: 0.89;
 }
 
@@ -907,14 +946,15 @@ main {
 /*Configuracion contenedor*/
 .contenedor-padre {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 0px;
 }
 
 .contenedor {
-  width: 300px;
+  width: 350px;
   background-color: rgb(240, 248, 255);
   color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
@@ -958,7 +998,7 @@ main {
 }
 
 .suscribete-hoteles {
-  width: 75%;
+  width: 80%;
   margin: 0 50px;
   padding: 30px 0;
   display: flex;
@@ -981,6 +1021,21 @@ main {
     color: rgb(51, 55, 58);
     justify-content: space-around;
     align-items: center;
+  }
+}
+#suscribete-hoteles {
+  width: 630px;
+  height: 9px;
+  margin: 0 60px;
+  padding: 20px 0;
+}
+
+@media (max-width: 800px) {
+  #suscribete-hoteles {
+    width: 330px;
+    height: 3px;
+    margin: 0 60px;
+    padding: 20px 0;
   }
 }
 h1, h2, h3, h4 {
@@ -1035,6 +1090,7 @@ form {
 
 .contenedor-padre {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;

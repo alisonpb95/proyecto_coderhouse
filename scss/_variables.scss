@@ -54,10 +54,11 @@ $desktopXG: 1200px;
     background-color: $color-septimo;
     margin: auto 0;
     display: flex; 
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     color: $color-secundario;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     opacity: .89;
 }
 
@@ -96,11 +97,6 @@ $desktopXG: 1200px;
     height: 30px;
 }
 
-@mixin contenedor-padres {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 @mixin boton-buscar-principal {
     background-color: $color-terciario;
@@ -125,8 +121,16 @@ $desktopXG: 1200px;
     margin-left: 35%;
 }
 
+@mixin contenedor-padres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 @mixin contenedor-detalle {
-    width: 300px;
+    width: 350px;
     background-color: $color-secundario;
     color: $color-primario;
     box-shadow: 3px 2.5px 10px $color-quinto;
@@ -146,6 +150,7 @@ $desktopXG: 1200px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 200px;
 }
 
 @mixin contenedor-opciones-detalle{
@@ -164,7 +169,7 @@ $desktopXG: 1200px;
 }
 
 @mixin suscribete {
-    width: 75%;
+    width: 80%;
     margin: 0 50px;
     padding: 30px 0;
     display: flex;
@@ -178,13 +183,13 @@ $desktopXG: 1200px;
 
 @mixin suscribete-chico {
     width: 75%;
-        margin: 0 60px;
-        padding: 30px 0;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        color: $color-primario;
-        justify-content: space-around;
-        align-items: center;
+    margin: 0 60px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $color-primario;
+    justify-content: space-around;
+    align-items: center;
 }
 
