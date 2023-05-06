@@ -41,6 +41,7 @@ main {
 /*Label menu busqueda*/
 .card-portada-i-filtro label {
     @include card-portada-label;
+    flex-wrap: wrap;
 }
 
 @media (max-width:$tablet) {
@@ -58,11 +59,21 @@ main {
 
 .boton-buscar {
     @include boton-buscar-principal;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }
 
 @media (max-width:$tablet) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-secundario;
+        }
         
     }
 }
@@ -96,6 +107,11 @@ main {
     border-radius: 3px;
     margin-top: 20px;
     margin-left: 40%;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }
 
 /* Configuración de recomendaciones*/

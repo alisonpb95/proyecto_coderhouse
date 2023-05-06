@@ -27,6 +27,19 @@ header {
   font-size: 25px;
 }
 
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: rgb(240, 248, 255);
+}
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: rgb(51, 55, 58);
+}
+
+.navbar-toggler {
+  background-color: rgb(51, 55, 58);
+}
+
 header img {
   width: 90px;
 }
@@ -90,6 +103,10 @@ section {
   padding: 1.5%;
   color: rgb(240, 248, 255);
   font-weight: bold;
+}
+.boton-suscribete:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
 }
 
 /*Configuración de imagenes de contacto en el pie página */
@@ -157,7 +174,7 @@ main {
   width: 130%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
-  margin: auto auto;
+  margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -187,6 +204,7 @@ main {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -214,6 +232,10 @@ main {
   font-weight: bold;
   margin-top: 18px;
 }
+.boton-buscar:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
+}
 
 @media (max-width: 768px) {
   .boton-buscar {
@@ -226,6 +248,10 @@ main {
     font-weight: bold;
     margin-top: 18px;
     margin-left: 35%;
+  }
+  .boton-buscar:hover {
+    background-color: rgb(51, 55, 58);
+    color: rgb(240, 248, 255);
   }
 }
 /*Configuracion contenedor*/
@@ -265,6 +291,10 @@ main {
   border-radius: 3px;
   margin-top: 20px;
   margin-left: 40%;
+}
+.boton-mas-hoteles button:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
 }
 
 /* Configuración de recomendaciones*/
@@ -388,7 +418,7 @@ main {
   width: 85%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
-  margin: auto auto;
+  margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -445,6 +475,10 @@ main {
   font-weight: bold;
   margin-top: 18px;
 }
+.boton-buscar:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
+}
 
 @media (max-width: 768px) {
   .boton-buscar {
@@ -457,6 +491,10 @@ main {
     font-weight: bold;
     margin-top: 18px;
     margin-left: 35%;
+  }
+  .boton-buscar:hover {
+    background-color: rgb(51, 55, 58);
+    color: rgb(240, 248, 255);
   }
 }
 /*Configuracion contenedor*/
@@ -575,7 +613,7 @@ main {
   width: 85%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
-  margin: auto auto;
+  margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -634,6 +672,10 @@ main {
   font-weight: bold;
   margin-top: 18px;
 }
+.boton-buscar:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
+}
 
 @media (max-width: 867px) {
   .boton-buscar {
@@ -646,6 +688,10 @@ main {
     font-weight: bold;
     margin-top: 18px;
     margin-left: 35%;
+  }
+  .boton-buscar:hover {
+    background-color: rgb(51, 55, 58);
+    color: rgb(240, 248, 255);
   }
 }
 /*Configuracion contenedor*/
@@ -741,6 +787,10 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+.boton-actividades-otros-destinos button:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
+}
 
 .suscribete-actividades {
   width: 75%;
@@ -807,7 +857,7 @@ main {
   width: 95%;
   padding: 30px 25px;
   background-color: rgb(35, 35, 35);
-  margin: auto auto;
+  margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -901,6 +951,10 @@ main {
   border-radius: 3px;
   margin-top: 20px;
   margin-left: 40%;
+}
+.boton-mas-ofertas button:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
 }
 
 .suscribete-hoteles {
@@ -1024,6 +1078,10 @@ form {
   font-weight: bold;
   margin-top: 5%;
   border-radius: 5%;
+}
+.boton-enviar:hover {
+  background-color: rgb(51, 55, 58);
+  color: rgb(240, 248, 255);
 }
 
 /*# sourceMappingURL=styles.css.map */

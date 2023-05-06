@@ -92,6 +92,11 @@ form {
     font-weight: bold;
     margin-top: 5%;
     border-radius: 5%;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
     
     
     

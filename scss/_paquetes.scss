@@ -54,11 +54,21 @@ main {
 
 .boton-buscar {
     @include boton-buscar-principal;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }
 
 @media (max-width:$tablet) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-secundario;
+        }
         
     }
 }

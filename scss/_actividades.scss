@@ -55,11 +55,21 @@ main {
 
 .boton-buscar {
     @include boton-buscar-principal;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }
 
 @media (max-width:867px) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-secundario;
+        }
     }
 }
 
@@ -144,6 +154,11 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
     
 }
 

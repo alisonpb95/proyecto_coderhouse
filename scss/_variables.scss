@@ -52,7 +52,7 @@ $desktopXG: 1200px;
 
 @mixin card-portada {
     background-color: $color-septimo;
-    margin: auto auto;
+    margin: auto 0;
     display: flex; 
     flex-wrap: wrap;
     gap: 10px;
@@ -64,16 +64,16 @@ $desktopXG: 1200px;
 
 @mixin card-portada-chico {
     width: 130%;
-        background-color: $color-septimo;
-        margin: auto 0;
-        padding: 10px 10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 10px;
-        color: $color-secundario;
-        justify-content: center;
-        opacity: .89;
+    background-color: $color-septimo;
+    margin: auto 0;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: $color-secundario;
+    justify-content: center;
+    opacity: .89;
 }
 
 @mixin card-portada-label {

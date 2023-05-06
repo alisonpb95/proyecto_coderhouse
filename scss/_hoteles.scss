@@ -92,6 +92,11 @@ main {
     border-radius: 3px;
     margin-top: 20px;
     margin-left: 40%;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }
 
 .suscribete-hoteles {

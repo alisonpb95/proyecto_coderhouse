@@ -24,6 +24,19 @@ header {
     font-size: 25px;
 }
 
+.nav-link,
+.navbar-nav .nav-link.active {
+    color: $color-secundario;
+
+    &:hover {
+        color: $color-primario;
+    }
+}
+
+.navbar-toggler {
+    background-color: $color-primario;
+}
+
 header img {
     width: 90px;
 }
@@ -97,6 +110,11 @@ section {
     padding: 1.5%;
     color: $color-secundario;
     font-weight: bold;
+
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
 }
 
 /*Configuración de imagenes de contacto en el pie página */
