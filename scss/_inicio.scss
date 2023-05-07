@@ -59,20 +59,23 @@ main {
 
 .boton-buscar {
     @include boton-buscar-principal;
+    transition: all 0.3s ease;
 
     &:hover {
-        background-color: $color-primario;
-        color: $color-secundario;
+        background-color: $color-secundario;
+        color: $color-terciario;
     }
 }
+
 
 @media (max-width:$tablet) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
+        transition: all 0.3s ease;
 
         &:hover {
-            background-color: $color-primario;
-            color: $color-secundario;
+            background-color: $color-secundario;
+            color: $color-terciario;
         }
         
     }
@@ -106,10 +109,12 @@ main {
     border-radius: 3px;
     margin-top: 20px;
     margin-left: 40%;
+    transition: all 0.3s ease;
 
     &:hover {
-        background-color: $color-primario;
-        color: $color-secundario;
+        background-color: $color-secundario;
+        color: $color-terciario;
+        border: 2px solid $color-terciario;
     }
 }
 

@@ -97,10 +97,12 @@ section {
   padding: 4.3%;
   color: rgb(240, 248, 255);
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 .boton-suscribete:hover {
-  background-color: rgb(51, 55, 58);
-  color: rgb(240, 248, 255);
+  background-color: rgb(240, 248, 255);
+  color: rgb(138, 43, 226);
+  border: 2px solid rgb(138, 43, 226);
 }
 
 /*Configuración de imagenes de contacto en el pie página */
@@ -226,10 +228,11 @@ main {
   color: rgb(240, 248, 255);
   font-weight: bold;
   margin-top: 18px;
+  transition: all 0.3s ease;
 }
 .boton-buscar:hover {
-  background-color: rgb(51, 55, 58);
-  color: rgb(240, 248, 255);
+  background-color: rgb(240, 248, 255);
+  color: rgb(138, 43, 226);
 }
 
 @media (max-width: 768px) {
@@ -243,10 +246,11 @@ main {
     font-weight: bold;
     margin-top: 18px;
     margin-left: 35%;
+    transition: all 0.3s ease;
   }
   .boton-buscar:hover {
-    background-color: rgb(51, 55, 58);
-    color: rgb(240, 248, 255);
+    background-color: rgb(240, 248, 255);
+    color: rgb(138, 43, 226);
   }
 }
 /*Configuracion contenedor hoteles destacados*/
@@ -286,10 +290,12 @@ main {
   border-radius: 3px;
   margin-top: 20px;
   margin-left: 40%;
+  transition: all 0.3s ease;
 }
 .boton-mas-hoteles button:hover {
-  background-color: rgb(51, 55, 58);
-  color: rgb(240, 248, 255);
+  background-color: rgb(240, 248, 255);
+  color: rgb(138, 43, 226);
+  border: 2px solid rgb(138, 43, 226);
 }
 
 /* Configuración de recomendaciones*/
@@ -470,6 +476,7 @@ main {
   color: rgb(240, 248, 255);
   font-weight: bold;
   margin-top: 18px;
+  transition: all 0.3s ease;
 }
 .boton-buscar:hover {
   background-color: rgb(51, 55, 58);
@@ -487,6 +494,7 @@ main {
     font-weight: bold;
     margin-top: 18px;
     margin-left: 35%;
+    transition: all 0.3s ease;
   }
   .boton-buscar:hover {
     background-color: rgb(51, 55, 58);
@@ -685,6 +693,7 @@ main {
   color: rgb(240, 248, 255);
   font-weight: bold;
   margin-top: 18px;
+  transition: all 0.3s ease;
 }
 .boton-buscar:hover {
   background-color: rgb(51, 55, 58);
@@ -702,6 +711,7 @@ main {
     font-weight: bold;
     margin-top: 18px;
     margin-left: 35%;
+    transition: all 0.3s ease;
   }
   .boton-buscar:hover {
     background-color: rgb(51, 55, 58);
@@ -809,10 +819,12 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .boton-actividades-otros-destinos button:hover {
-  background-color: rgb(51, 55, 58);
-  color: rgb(240, 248, 255);
+  background-color: rgb(240, 248, 255);
+  color: rgb(138, 43, 226);
+  border: 2px solid rgb(138, 43, 226);
 }
 
 .suscribete-actividades {
@@ -943,6 +955,22 @@ main {
   height: 30px;
 }
 
+.boton-buscar {
+  background-color: rgb(138, 43, 226);
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  color: rgb(240, 248, 255);
+  font-weight: bold;
+  margin-top: 18px;
+  transition: all 0.3s ease;
+}
+.boton-buscar:hover {
+  background-color: rgb(240, 248, 255);
+  color: rgb(138, 43, 226);
+}
+
 /*Configuracion contenedor*/
 .contenedor-padre {
   display: flex;
@@ -991,10 +1019,12 @@ main {
   border-radius: 3px;
   margin-top: 20px;
   margin-left: 40%;
+  transition: all 0.3s ease;
 }
 .boton-mas-ofertas button:hover {
-  background-color: rgb(51, 55, 58);
-  color: rgb(240, 248, 255);
+  background-color: rgb(240, 248, 255);
+  color: rgb(138, 43, 226);
+  border: 2px solid rgb(138, 43, 226);
 }
 
 .suscribete-hoteles {

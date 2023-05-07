@@ -55,7 +55,7 @@ main {
 
 .boton-buscar {
     @include boton-buscar-principal;
-
+    transition: all 0.3s ease;
     &:hover {
         background-color: $color-primario;
         color: $color-secundario;
@@ -65,7 +65,7 @@ main {
 @media (max-width:867px) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
-
+        transition: all 0.3s ease;
         &:hover {
             background-color: $color-primario;
             color: $color-secundario;
@@ -162,10 +162,12 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all 0.3s ease;
 
     &:hover {
-        background-color: $color-primario;
-        color: $color-secundario;
+        background-color: $color-secundario;
+        color: $color-terciario;
+        border: 2px solid $color-terciario;
     }
     
 }

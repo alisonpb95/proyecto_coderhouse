@@ -54,7 +54,7 @@ main {
 
 .boton-buscar {
     @include boton-buscar-principal;
-
+    transition: all 0.3s ease;
     &:hover {
         background-color: $color-primario;
         color: $color-secundario;
@@ -64,7 +64,7 @@ main {
 @media (max-width:$tablet) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
-
+        transition: all 0.3s ease;
         &:hover {
             background-color: $color-primario;
             color: $color-secundario;
