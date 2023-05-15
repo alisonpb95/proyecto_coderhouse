@@ -104,14 +104,17 @@ main {
 .boton-mas-ofertas button{
     background-color: blueviolet;
     border: none;
-    width: 20%;
+    width: 15%;
     height: 45px;
     color: aliceblue;
     font-weight: bold;
     font-size: 1$letra-chica;
     border-radius: 3px;
-    margin-top: 20px;
-    margin-left: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
     transition: all 0.3s ease;
     &:hover {
         background-color: $color-secundario;
@@ -123,6 +126,7 @@ main {
 .suscribete-hoteles {
     @include suscribete;
 }
+
 
 @media (max-width:$tablet) {
     .suscribete-hoteles {
