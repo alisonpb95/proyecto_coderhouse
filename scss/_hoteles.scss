@@ -20,6 +20,15 @@ main {
     left: 5%;
 }
 
+@media (max-width:$tablet) {
+    main {
+        @include menu;
+        width: 90%;
+        top: 3%;
+        left: 5%;
+    }
+}
+
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 
@@ -67,6 +76,7 @@ main {
 .contenedor-padre {
     @include contenedor-padres;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 0px;
 }
 

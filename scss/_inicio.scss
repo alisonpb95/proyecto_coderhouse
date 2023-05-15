@@ -2,7 +2,7 @@ h1, h2, h3, h4 {
     @include titulos;
 }
 
-h3 {
+h3, h4 {
     font-weight: bold;
 }
 
@@ -27,8 +27,8 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-    width: 200%;
-    padding: 30px 150px;
+    width: 300%;
+    padding: 30px 40px;
     @include card-portada;
 }
 
@@ -86,8 +86,13 @@ main {
 
 .contenedor-padre {
     @include contenedor-padres;
-    justify-content: center;
-    gap: 40px;
+}
+
+@media (max-width:$tablet) {
+    .contenedor-padre{
+        @include contenedor-padres;
+        justify-items: center;
+    }
 }
 
 .contenedor {

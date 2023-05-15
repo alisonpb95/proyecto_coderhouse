@@ -134,7 +134,7 @@ h1, h2, h3, h4 {
   margin: 20px 0;
 }
 
-h3 {
+h3, h4 {
   font-weight: bold;
 }
 
@@ -156,10 +156,10 @@ h3 {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
   color: rgb(240, 248, 255);
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
   position: absolute;
   width: 70%;
   top: 15%;
@@ -169,8 +169,8 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-  width: 200%;
-  padding: 30px 150px;
+  width: 300%;
+  padding: 30px 40px;
   background-color: rgb(35, 35, 35);
   margin: auto 0;
   display: flex;
@@ -186,14 +186,15 @@ main {
   .card-portada-i {
     width: 130%;
     background-color: rgb(35, 35, 35);
-    margin: auto 0;
+    margin: 0px 0px 20px 0px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     color: rgb(240, 248, 255);
     justify-content: center;
+    align-items: center;
     opacity: 0.89;
   }
 }
@@ -229,7 +230,7 @@ main {
   height: 40px;
   color: rgb(240, 248, 255);
   font-weight: bold;
-  margin-top: 18px;
+  margin-top: 8px;
   transition: all 0.3s ease;
 }
 .boton-buscar:hover {
@@ -247,7 +248,6 @@ main {
     color: rgb(240, 248, 255);
     font-weight: bold;
     margin-top: 18px;
-    margin-left: 35%;
     transition: all 0.3s ease;
   }
   .boton-buscar:hover {
@@ -259,20 +259,27 @@ main {
 .contenedor-padre {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
 }
 
+@media (max-width: 768px) {
+  .contenedor-padre {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+  }
+}
 .contenedor {
-  width: 350px;
+  width: 300px;
   background-color: rgb(240, 248, 255);
   color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 3px;
 }
 
 .contenedor img {
@@ -405,16 +412,30 @@ h1, h2, h3, h4 {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
   color: rgb(240, 248, 255);
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
   position: absolute;
   width: 70%;
   top: 15%;
   left: 15%;
 }
 
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: rgb(240, 248, 255);
+    text-align: center;
+    margin: 20px 0;
+    position: absolute;
+    width: 70%;
+    top: 5%;
+    left: 5%;
+  }
+}
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-p {
@@ -435,14 +456,15 @@ main {
   .card-portada-p {
     width: 130%;
     background-color: rgb(35, 35, 35);
-    margin: auto 0;
+    margin: 0px 0px 20px 0px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     color: rgb(240, 248, 255);
     justify-content: center;
+    align-items: center;
     opacity: 0.89;
   }
 }
@@ -477,7 +499,7 @@ main {
   height: 40px;
   color: rgb(240, 248, 255);
   font-weight: bold;
-  margin-top: 18px;
+  margin-top: 8px;
   transition: all 0.3s ease;
 }
 .boton-buscar:hover {
@@ -495,7 +517,6 @@ main {
     color: rgb(240, 248, 255);
     font-weight: bold;
     margin-top: 18px;
-    margin-left: 35%;
     transition: all 0.3s ease;
   }
   .boton-buscar:hover {
@@ -507,21 +528,22 @@ main {
 .contenedor-padre {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin: 10px 20px;
+  flex-wrap: wrap;
 }
 
 .contenedor {
-  width: 350px;
+  width: 300px;
   background-color: rgb(240, 248, 255);
   color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 3px;
 }
 
 .contenedor-opciones {
@@ -620,10 +642,10 @@ h1, h2, h3, h4 {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
   color: rgb(240, 248, 255);
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
   position: absolute;
   width: 70%;
   top: 15%;
@@ -634,7 +656,7 @@ main {
 /*fondo menu busqueda*/
 .card-portada-a {
   width: 200%;
-  padding: 30px 40px;
+  padding: 25px 40px;
   background-color: rgb(35, 35, 35);
   margin: auto 0;
   display: flex;
@@ -644,20 +666,22 @@ main {
   color: rgb(240, 248, 255);
   justify-content: space-around;
   opacity: 0.89;
+  align-items: center;
 }
 
-@media (max-width: 867px) {
+@media (max-width: 768px) {
   .card-portada-a {
     width: 130%;
     background-color: rgb(35, 35, 35);
-    margin: auto 0;
+    margin: 0px 0px 20px 0px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     color: rgb(240, 248, 255);
     justify-content: center;
+    align-items: center;
     opacity: 0.89;
   }
 }
@@ -669,7 +693,7 @@ main {
   font-weight: bold;
 }
 
-@media (max-width: 867px) {
+@media (max-width: 768px) {
   .card-portada-a-filtro label {
     display: flex;
     flex-wrap: wrap;
@@ -694,7 +718,7 @@ main {
   height: 40px;
   color: rgb(240, 248, 255);
   font-weight: bold;
-  margin-top: 18px;
+  margin-top: 8px;
   transition: all 0.3s ease;
 }
 .boton-buscar:hover {
@@ -702,7 +726,7 @@ main {
   color: rgb(240, 248, 255);
 }
 
-@media (max-width: 867px) {
+@media (max-width: 768px) {
   .boton-buscar {
     background-color: rgb(138, 43, 226);
     border: none;
@@ -712,7 +736,6 @@ main {
     color: rgb(240, 248, 255);
     font-weight: bold;
     margin-top: 18px;
-    margin-left: 35%;
     transition: all 0.3s ease;
   }
   .boton-buscar:hover {
@@ -724,9 +747,9 @@ main {
 .contenedor-padre {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -893,16 +916,30 @@ h1, h2, h3, h4 {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
   color: rgb(240, 248, 255);
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
   position: absolute;
   width: 90%;
   top: 15%;
   left: 5%;
 }
 
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: rgb(240, 248, 255);
+    text-align: center;
+    margin: 20px 0;
+    position: absolute;
+    width: 90%;
+    top: 3%;
+    left: 5%;
+  }
+}
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-h {
@@ -923,14 +960,15 @@ main {
   .card-portada-h {
     width: 130%;
     background-color: rgb(35, 35, 35);
-    margin: auto 0;
+    margin: 0px 0px 20px 0px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     color: rgb(240, 248, 255);
     justify-content: center;
+    align-items: center;
     opacity: 0.89;
   }
 }
@@ -965,7 +1003,7 @@ main {
   height: 40px;
   color: rgb(240, 248, 255);
   font-weight: bold;
-  margin-top: 18px;
+  margin-top: 8px;
   transition: all 0.3s ease;
 }
 .boton-buscar:hover {
@@ -977,20 +1015,21 @@ main {
 .contenedor-padre {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 0px;
 }
 
 .contenedor {
-  width: 350px;
+  width: 300px;
   background-color: rgb(240, 248, 255);
   color: rgb(51, 55, 58);
   box-shadow: 3px 2.5px 10px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 3px;
 }
 
 .contenedor img {
@@ -1123,9 +1162,9 @@ form {
 .contenedor-padre {
   display: flex;
   justify-content: center;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   gap: 90px;
   margin-left: 10%;
   margin-right: 10%;

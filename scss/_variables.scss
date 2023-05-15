@@ -30,10 +30,10 @@ $desktopXG: 1200px;
 @mixin menu {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     color: $color-secundario;
     text-align: center;
-    margin: 30px 0;
+    margin: 20px 0;
     position: absolute;
 }
 
@@ -66,14 +66,15 @@ $desktopXG: 1200px;
 @mixin card-portada-chico {
     width: 130%;
     background-color: $color-septimo;
-    margin: auto 0;
+    margin: 0px 0px 20px 0px;
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     color: $color-secundario;
     justify-content: center;
+    align-items: center;
     opacity: .89;
 }
 
@@ -106,7 +107,7 @@ $desktopXG: 1200px;
     height: 40px;
     color: $color-secundario;
     font-weight: bold;
-    margin-top: 18px;
+    margin-top: 8px;
     
 }
 
@@ -119,25 +120,24 @@ $desktopXG: 1200px;
     color: $color-secundario;
     font-weight: bold;
     margin-top: 18px;
-    margin-left: 35%;
 }
 
 @mixin contenedor-padres {
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 
 @mixin contenedor-detalle {
-    width: 350px;
+    width: 300px;
     background-color: $color-secundario;
     color: $color-primario;
     box-shadow: 3px 2.5px 10px $color-quinto;
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 3px;
 }
 
 @mixin contenedor-imagen {

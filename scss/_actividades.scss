@@ -24,11 +24,13 @@ main {
 /*fondo menu busqueda*/
 .card-portada-a {
     width: 200%;
-    padding: 30px 40px;
+    padding: 25px 40px;
     @include card-portada;
+    align-items: center;
+    
 }
 
-@media (max-width:867px) {
+@media (max-width:$tablet) {
     .card-portada-a {
         @include card-portada-chico;
     }
@@ -39,7 +41,7 @@ main {
     @include card-portada-label;
 }
 
-@media (max-width:867px) {
+@media (max-width:$tablet) {
     .card-portada-a-filtro label{
         @include card-portada-label-chico;
         
@@ -62,7 +64,7 @@ main {
     }
 }
 
-@media (max-width:867px) {
+@media (max-width:$tablet) {
     .boton-buscar{
         @include boton-buscar-principal-chico;
         transition: all 0.3s ease;
@@ -77,7 +79,8 @@ main {
 
 .contenedor-padre {
     @include contenedor-padres;
-    gap: 30px;
+    gap: 20px;
+    
 }
 
 @media (min-width: $tablet) {

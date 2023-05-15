@@ -20,6 +20,15 @@ main {
     left: 15%
 }
 
+@media (max-width:$tablet) {
+    main {
+        @include menu;
+        width: 70%;
+        top: 5%;
+        left: 5%;
+    }
+}
+
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 
@@ -80,6 +89,7 @@ main {
     justify-content: center;
     gap: 30px;
     margin: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .contenedor {
