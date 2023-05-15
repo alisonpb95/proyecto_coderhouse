@@ -27,8 +27,8 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-    width: 650px;
-    padding: 30px 50px;
+    width: 200%;
+    padding: 30px 150px;
     @include card-portada;
 }
 

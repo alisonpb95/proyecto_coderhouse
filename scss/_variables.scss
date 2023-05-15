@@ -52,10 +52,10 @@ $desktopXG: 1200px;
 
 @mixin card-portada {
     background-color: $color-septimo;
-    margin: auto auto;
+    margin: auto 0;
     display: flex; 
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     gap: 10px;
     color: $color-secundario;
     justify-content: space-around;
