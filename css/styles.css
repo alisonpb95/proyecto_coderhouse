@@ -167,16 +167,16 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-  width: 300%;
-  padding: 30px 70px;
+  width: 650px;
+  padding: 30px 50px;
   background-color: rgb(35, 35, 35);
-  margin: auto 0;
+  margin: auto auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  /*justify-content: space-between;*/
+  justify-content: space-around;
   opacity: 0.89;
 }
 
@@ -302,7 +302,7 @@ main {
 #grid-recomendaciones {
   display: grid;
   grid-template-areas: "recomendacion-paquetes recomendacion-paquetes recomendacion-experiencia" "recomendacion-seguro recomendacion-guia recomendacion-guia";
-  grid-template-rows: 380px 380px 380px;
+  grid-template-rows: 380px 380px;
   grid-template-columns: 30% auto 30%;
   margin: 3%;
   gap: 10px;
@@ -377,7 +377,7 @@ section#recomendacion-guia {
 }
 
 #recomendacion-guia {
-  grid-column: 2/4;
+  grid-column: 2/-1;
 }
 
 h1, h2, h3, h4 {
@@ -419,13 +419,13 @@ main {
   width: 300%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
-  margin: auto 0;
+  margin: auto auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  /*justify-content: space-between;*/
+  justify-content: space-around;
   opacity: 0.89;
 }
 
@@ -634,13 +634,13 @@ main {
   width: 200%;
   padding: 30px 40px;
   background-color: rgb(35, 35, 35);
-  margin: auto 0;
+  margin: auto auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  /*justify-content: space-between;*/
+  justify-content: space-around;
   opacity: 0.89;
 }
 
@@ -907,13 +907,13 @@ main {
   width: 400%;
   padding: 30px 25px;
   background-color: rgb(35, 35, 35);
-  margin: auto 0;
+  margin: auto auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   color: rgb(240, 248, 255);
-  /*justify-content: space-between;*/
+  justify-content: space-around;
   opacity: 0.89;
 }
 

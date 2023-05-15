@@ -27,8 +27,8 @@ main {
 /*Menu de busqueda prinicipal*/
 /*fondo menu busqueda*/
 .card-portada-i {
-    width: 300%;
-    padding: 30px 70px;
+    width: 650px;
+    padding: 30px 50px;
     @include card-portada;
 }
 
@@ -125,7 +125,7 @@ main {
     grid-template-areas: 
     "recomendacion-paquetes recomendacion-paquetes recomendacion-experiencia"
     "recomendacion-seguro recomendacion-guia recomendacion-guia";
-    grid-template-rows: 380px 380px 380px;
+    grid-template-rows: 380px 380px;
     grid-template-columns: 30% auto 30%; 
     margin: 3%;
     gap: 10px;
@@ -212,5 +212,5 @@ section#recomendacion-guia {
 }
 
 #recomendacion-guia{
-    grid-column: 2/4;
+    grid-column: 2/-1;
 }
